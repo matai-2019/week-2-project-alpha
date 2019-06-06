@@ -1,23 +1,30 @@
 {
-  "name": "server-side-templating",
-  "version": "0.1.0",
-  "description": "Server-side rendering with Handlebars templates",
-  "author": "EDA",
-  "license": "ISC",
+  "name": "4x4animals",
+  "version": "1.0.0",
+  "description": "group project",
   "main": "index.js",
   "scripts": {
-    "debug": "nodemon index.js",
-    "start": "node index",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll --noStackTrace",
+    "start": "node .",
+    "debug": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joanna-klimas/4x4animals.git"
+  },
+  "keywords": [],
+  "author": "Team Joanna, Celia, Davidn, Jennis, Ruslan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joanna-klimas/4x4animals/issues"
+  },
+  "homepage": "https://github.com/joanna-klimas/4x4animals#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   },
   "dependencies": {
-    "express": "^4.16.2",
-    "express-handlebars": "^3.0.0"
-  },
-  "devDependencies": {
-    "cheerio": "^1.0.0-rc.3",
-    "jest": "^24.1.0",
-    "nodemon": "^1.14.11",
-    "supertest": "^3.4.2"
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "jest": "^24.8.0"
   }
 }

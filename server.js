@@ -1,36 +1,18 @@
 const express = require('express')
 const hbs = require('express-handlebars')
+
 const server = express()
-
-const art = require('./art.json')
-
-module.exports = server
+const homeRouter = require('./routes')
 
 // Middleware
 server.engine('hbs', hbs({
+  defaultLayout: 'main',
   extname: 'hbs'
 }))
 server.set('view engine', 'hbs')
 server.use(express.static('public'))
+server.use(express.urlencoded({extended: false}))
 
-// Routes
+server.use('/', homeRouter)
 
-server.get('/home', (req, res) => {
-  const viewData = {
-    title: 'Gallery',
-    name: 'Picasso',
-    art: art
-  }
-  res.render('home', viewData)
-})
-
-server.get('/artworks/:id', (req, res) => {
-  const idx = req.params.id
-  let artwork = art.find(element => element.id == idx)
-
-  let viewData = {
-    art: artwork,
-    title: "Artist's work"
-  }
-  res.render('artworks', viewData)
-})
+module.exports = server
