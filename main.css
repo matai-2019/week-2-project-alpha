@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(180, 211, 154);
+ /* font-family: 'Spirax', cursive; */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  /* define fonts.
+}
+
+/* .form */
+
+.feature {
+  display: flex;
+  align-items: center; /*fix this align */
+}
+
+.featureImage {
+  display: flex;
+  width: 200px;
+  height: 200px;
+}
+
+.footer {
+  text-align: center;
+  /* define fonts. */
+}
+
+.contacts {
+  text-align: center;
+  /* define fonts. */
+}
+
+/* page 2 */
+
+.nav {
+  text-align: center;
+  color: black;
+}
+
+.image {
+  border-radius: 50%;
+  border: 1px solid black;
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
+}
+
+
+/* page 3 same as page 2 */
