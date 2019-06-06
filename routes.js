@@ -14,33 +14,39 @@ router.get('/', (req, res) =>
   res.send('Testing home page')
 )
 
-// Route home
+// GET/home
 
-router.get('/home', (req, res) =>
-  res.send('home page')
-  // res.render('index.html', data)
-)
-
-// router.get('/animal/:id', (req, res) =>
-//   const id = req.params.id
-//   let animal = animals.find(element => element.id == id)
-//   res.render('animals', data)
+// router.get('/home', (req, res) =>
+//   res.send('home page')
+//   // res.render('index.html', data)
 // )
 
-// router.post('/animals/edit/:id', (req, res) => {
-//   let animals = data.animals
+// GET/animal
+
+// router.get('/animals/:id', (req, res) => {
+//   let arrOfAnimals = data.animals  
 //   let idx = req.params.id
-//   let animals = animals.find(element => element.id == idx)
+//   let selectedAnimal = arrOfAnimals.find(element => element.id == idx)
+
+//   res.render('./data.json', selectedAnimal)
+// })
+
+// // POST
+
+// router.post('/animals/edit/:id', (req, res) => {
+//   let arrOfAnimals = data.animals
+//   let idx = req.params.id
+//   let selectedAnimal = arrOfAnimals.find(element => element.id == idx)
 
 //   const newAnimal = {
 //     name: req.body.name,
-//     breed: req.body.breed,
-//     owner: req.body.owner
+//     type: req.body.type,
+//     age: req.body.age
 //   }
 
-//   rightPuppy.name = newPuppy.name
-//   rightPuppy.breed = newPuppy.breed
-//   rightPuppy.owner = newPuppy.owner
+//   selectedAnimal.name = newAnimal.name
+//   selectedAnimal.type = newAnimal.type
+//   selectedAnimal.age = newAnimal.age
 
 //   fs.writeFile('./data.json', JSON.stringify(data), (err) => {
 //     if (err) {
@@ -51,5 +57,5 @@ router.get('/home', (req, res) =>
 //     }
 //   })
 
-//   res.redirect(`/animals/${rightPuppy.id}`)
+//   res.redirect(`/animals/${selectedAnimal.id}`)
 // })
