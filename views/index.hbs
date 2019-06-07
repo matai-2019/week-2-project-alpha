@@ -1,11 +1,18 @@
 <div class ="container">
+  <p>
+    <h2>Welcome to 4x4 animals. Free to use nationwide service for everyone who is passionate about animals living conditions and welfare. We help to find new owners for the animals that need care or rehoming. There are hundreds of reasons why that might happen: farm gets sold, natural disasters, sudden change in living arrangements due to work relocation of an owner. If you have an animal that you are unable to look after or looking for one - you are in the right place. Please see the animals needing a new home now below. </h2>
+
+
+  </p>
   {{#each animals}}
   <div class = "listedAnimals">
-    <a href="/animals/{{id}}"><img class = "image" src={{photo}} alt={{name}}></a>
+    <a href="/animals/{{id}}"><img class="image" src={{photo}} alt={{name}}></a>
     
-    <h1>{{id}}</h1>
     <h1>{{available}}</h1>
-    <h1>{{age}}</h1>
+    <h1>{{name}}</h1>
+
   </div>
   {{/each}}
 </div>
+
+<footer class="footer"><h2>Contact us for any extra info. <p>For more information and any further questions please feel free to contact us on 4x4animals@gmail.com or call us on 02102791580 during working hours Monday - Friday.</p></h2></footer>

@@ -1,6 +1,6 @@
 body {
-  background-color: rgb(130, 216, 60);
- /* font-family: 'Spirax', cursive; */
+  background-color: rgb(180, 211, 154);
+  font-family: 'Gochi Hand', cursive;
 }
  
 .container {
@@ -11,8 +11,15 @@ body {
 
 .title {
   text-align: center;
-  /* define fonts.  tttt
-}gst
+  font-family: 'Chicle', cursive;
+  font-size: 80px;
+}
+
+.h1 {
+    text-align: center;
+    font-family: 'Chicle', cursive;
+  }
+
 
 /* .form */
 
@@ -29,14 +36,11 @@ body {
 
 .footer {
   text-align: center;
-  /* define fonts. */
-}
+ }
 
 .contacts {
   text-align: center;
-  /* define fonts. */
 }
-
 /* page 2 */
 
 .listedAnimals {
