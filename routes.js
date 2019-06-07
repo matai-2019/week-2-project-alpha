@@ -11,7 +11,7 @@ module.exports = router
 // GET/home
 
 router.get('/home', (req, res) => {
-  res.render('index-dummy', data)
+  res.render('index', data)
 })
 
 // GET
@@ -22,13 +22,13 @@ router.get('/', (req, res) => {
 
 // GET/animal
 
-// router.get('/animals/:id', (req, res) => {
-//   let arrOfAnimals = data.animals  
-//   let idx = req.params.id
-//   let selectedAnimal = arrOfAnimals.find(element => element.id == idx)
+router.get('/animals/:id', (req, res) => {
+  let arrOfAnimals = data.animals  
+  let idx = req.params.id
+  let selectedAnimal = arrOfAnimals.find(element => element.id == idx)
 
-//   res.render('./data.json', selectedAnimal)
-// })
+  res.render('item', selectedAnimal)
+})
 
 // // POST
 
