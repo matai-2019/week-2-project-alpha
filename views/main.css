@@ -1,6 +1,6 @@
 body {
   background-color: rgb(180, 211, 154);
- /* font-family: 'Spirax', cursive; */
+  font-family: 'Chicle', cursive;
 }
  
 .container {
@@ -11,14 +11,13 @@ body {
 
 .title {
   text-align: center;
-  /* define fonts.  tttt
-}gst
+}
 
 /* .form */
 
 .feature {
   display: flex;
-  align-items: center; /*fix this align */
+  align-items: center;
 }
 
 .featureImage {
@@ -29,12 +28,12 @@ body {
 
 .footer {
   text-align: center;
-  /* define fonts. */
+  font-size: 45px;
 }
 
 .contacts {
   text-align: center;
-  /* define fonts. */
+  font-size: 25px;
 }
 
 /* page 2 */
