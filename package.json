@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --watchAll --noStackTrace",
     "start": "node .",
-    "debug": "nodemon ."
+    "debug": "nodemon . --ignore data.json"
   },
   "repository": {
     "type": "git",
