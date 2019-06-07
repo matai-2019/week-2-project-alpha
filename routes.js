@@ -23,7 +23,7 @@ router.get('/', (req, res) => {
 // GET/animal
 
 router.get('/animals/:id', (req, res) => {
-  let arrOfAnimals = data.animals  
+  let arrOfAnimals = data.animals
   let idx = req.params.id
   let selectedAnimal = arrOfAnimals.find(element => element.id == idx)
 
