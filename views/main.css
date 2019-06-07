@@ -2,7 +2,7 @@ body {
   background-color: rgb(180, 211, 154);
  /* font-family: 'Spirax', cursive; */
 }
-
+ 
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -11,8 +11,8 @@ body {
 
 .title {
   text-align: center;
-  /* define fonts.
-}
+  /* define fonts.  tttt
+}gst
 
 /* .form */
 
@@ -38,6 +38,13 @@ body {
 }
 
 /* page 2 */
+
+.listedAnimals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 75px;
+}
 
 .nav {
   text-align: center;
