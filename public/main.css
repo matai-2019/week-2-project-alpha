@@ -1,12 +1,14 @@
 body {
   background-color: rgb(180, 211, 154);
   font-family: 'Gochi Hand', cursive;
+  text-align: center;
 }
  
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
 }
 
 .title {
@@ -61,6 +63,9 @@ body {
   object-fit: cover;
   width: 230px;
   height: 230px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
