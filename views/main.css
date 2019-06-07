@@ -39,6 +39,13 @@ body {
 
 /* page 2 */
 
+.listedAnimals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 75px;
+}
+
 .nav {
   text-align: center;
   color: black;
