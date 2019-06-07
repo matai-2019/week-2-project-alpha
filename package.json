@@ -1,0 +1,30 @@
+{
+  "name": "4x4animals",
+  "version": "1.0.0",
+  "description": "group project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --noStackTrace",
+    "start": "node .",
+    "debug": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joanna-klimas/4x4animals.git"
+  },
+  "keywords": [],
+  "author": "Team Joanna, Celia, Davidn, Jennis, Ruslan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joanna-klimas/4x4animals/issues"
+  },
+  "homepage": "https://github.com/joanna-klimas/4x4animals#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "jest": "^24.8.0"
+  }
+}
