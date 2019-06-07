@@ -8,28 +8,27 @@ const indexPath = path.join('')
 
 module.exports = router
 
-// GET
-
-router.get('/', (req, res) => 
-  res.send('Testing home page')
-)
-
 // GET/home
 
-// router.get('/home', (req, res) =>
-//   res.send('home page')
-//   // res.render('index.html', data)
-// )
+router.get('/home', (req, res) => {
+  res.render('index', data)
+})
+
+// GET
+
+router.get('/', (req, res) => {
+  res.redirect('./home')
+})
 
 // GET/animal
 
-// router.get('/animals/:id', (req, res) => {
-//   let arrOfAnimals = data.animals  
-//   let idx = req.params.id
-//   let selectedAnimal = arrOfAnimals.find(element => element.id == idx)
+router.get('/animals/:id', (req, res) => {
+  let arrOfAnimals = data.animals  
+  let idx = req.params.id
+  let selectedAnimal = arrOfAnimals.find(element => element.id == idx)
 
-//   res.render('./data.json', selectedAnimal)
-// })
+  res.render('item', selectedAnimal)
+})
 
 // // POST
 
@@ -41,18 +40,17 @@ router.get('/', (req, res) =>
 //   const newAnimal = {
 //     name: req.body.name,
 //     type: req.body.type,
-//     age: req.body.age
+//     available: req.body.available
 //   }
 
 //   selectedAnimal.name = newAnimal.name
 //   selectedAnimal.type = newAnimal.type
-//   selectedAnimal.age = newAnimal.age
+//   selectedAnimal.available = newAnimal.available
 
 //   fs.writeFile('./data.json', JSON.stringify(data), (err) => {
 //     if (err) {
 //       console.log(err)}
 //     else {
-//       console.log("wooo!")
 //       console.log(data)
 //     }
 //   })
