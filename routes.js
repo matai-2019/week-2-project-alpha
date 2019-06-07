@@ -31,29 +31,32 @@ router.get('/animals/:id', (req, res) => {
 })
 
 // // POST
+router.get('/animals/edit/:id', (req, res) => {
+  let arrOfAnimals = data.animals
+  let idx = req.params.id
+  let selectedAnimal = arrOfAnimals.find(element => element.id == idx)
+  
+  res.render('edit', selectedAnimal)
+})
 
-// router.post('/animals/edit/:id', (req, res) => {
-//   let arrOfAnimals = data.animals
-//   let idx = req.params.id
-//   let selectedAnimal = arrOfAnimals.find(element => element.id == idx)
+router.post('/animals/edit/:id', (req, res) => {
+  let arrOfAnimals = data.animals
+  let idx = req.params.id
+  let selectedAnimal = arrOfAnimals.find(element => element.id == idx)
 
-//   const newAnimal = {
-//     name: req.body.name,
-//     type: req.body.type,
-//     available: req.body.available
-//   }
+  const newAnimal = {
+    available: req.body.available
+  }
 
-//   selectedAnimal.name = newAnimal.name
-//   selectedAnimal.type = newAnimal.type
-//   selectedAnimal.available = newAnimal.available
+  selectedAnimal.available = newAnimal.available
 
-//   fs.writeFile('./data.json', JSON.stringify(data), (err) => {
-//     if (err) {
-//       console.log(err)}
-//     else {
-//       console.log(data)
-//     }
-//   })
+  fs.writeFile('./data.json', JSON.stringify(data), (err) => {
+    if (err) {
+      console.log(err)}
+    else {
+      console.log(data)
+    }
+  })
 
-//   res.redirect(`/animals/${selectedAnimal.id}`)
-// })
+  res.redirect(`/animals/${selectedAnimal.id}`)
+})
