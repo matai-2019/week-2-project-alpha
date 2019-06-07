@@ -1,0 +1,11 @@
+<div class ="container">
+  {{#each animals}}
+  <div class = "listedAnimals">
+    <a href="/animals/{{id}}"><img class = "image" src={{photo}} alt={{name}}></a>
+    
+    <h1>{{id}}</h1>
+    <h1>{{available}}</h1>
+    <h1>{{age}}</h1>
+  </div>
+  {{/each}}
+</div>

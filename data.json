@@ -39,7 +39,7 @@
   "id": 5,
   "name" : "Chipster",
   "type" : "chicken",
-  "photo" : "/images/chicken-2.jpg",
+  "photo" : "/images/chicken-1.jpg",
   "age" : "juvenile", 
   "available" : "true"
   },
