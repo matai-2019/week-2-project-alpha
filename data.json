@@ -40,7 +40,7 @@
   "name" : "Chipster",
   "type" : "chicken",
   "photo" : "/images/chicken-2.jpg",
-  "age" : "young", 
+  "age" : "juvenile", 
   "available" : "true"
   },
     {
@@ -53,18 +53,18 @@
   },
     {
   "id": 7,
-  "name" : "xxx",
+  "name" : "Mooway",
   "type" : "cow",
   "photo" : "/images/cow-1.jpg",
-  "age" : "xxx", 
+  "age" : "juvenile", 
   "available" : "true"
   },
     {
   "id": 8,
-  "name" : "xxx",
+  "name" : "Buttercup",
   "type" : "cow",
   "photo" : "/images/cow-2.jpg",
-  "age" : "xxx", 
+  "age" : "adult", 
   "available" : "true"
   }
 
